@@ -81,7 +81,7 @@ usuario_conocimiento_scoring    = 2*usuario_puntuacion_conocimiento.mean()
 
 conocimiento_ideal = 9.82
 Ideal['Usuario'] = pd.DataFrame(usuario_puntuacion_conocimiento.transpose())
-Ideal.index = ['Experiencia previa','Aprendizaje autónomo','Posesión de información','Pensamiento crítico']
+Ideal.index = ['Previous experience','Self learning','Possesion of information','Critical thinking']
 
 # Imprimir los resultados de la dimension conocimiento
 output_file     = open(f"{path}/files/{usuario_csv}_output.csv", 'w')
@@ -213,9 +213,9 @@ habilidades_ideal = 9.88
 
 
 Hab['Usuario'] = pd.DataFrame(usuario_puntuacion_habilidades.transpose())
-Hab.index = ['Aprovechar oportunidades',
-               'Desarrollo de redes de contactos ','Toma de decisiones y solución de problemas ','Persuasión ',
-               'Creatividad e innovación','Liderazgo ']
+Hab.index = ['Seize opportunities',
+               'Development  of contact network','Decision making and problem solving','Persuasion ',
+               'Creativity e innovation','Leadership ']
 
 # Concatenar las dos Dataframes (Conocimiento y Habilidades)
 Ideal  = Ideal.append(Hab)
@@ -571,8 +571,8 @@ usuario_actitudes_scoring    = 2*usuario_puntuacion_actitudes.mean()
 
 
 Act['Usuario'] = pd.DataFrame(usuario_puntuacion_actitudes.transpose())
-Act.index = ['Nonconformity and individualism','Locus de control interno ','Tendencia a asumir riesgos ',
-               'Tolerancia al fracaso y a la incertidumbre ','Motivación','Persistencia ','Legitimidad','Autoeficacia ','Competitividad','Confianza ']
+Act.index = ['Nonconformity and individualism','Locus of internal control ','Tendency to take risks ',
+               'Tolerance for failure and uncertainty ','Motivation','Persistence ','Legitimacy','Self-Eficacy ','Competitiveness','Trust ']
 
 # Concatenar las dos Dataframes (Conocimiento, Habilidades, y Actitudes y valores)
 Ideal  = Ideal.append(Act)
