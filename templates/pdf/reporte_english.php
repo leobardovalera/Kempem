@@ -110,7 +110,7 @@
     <div class="centrado" style="position: absolute; bottom: 100px; width: 100%;">
         <?= $evaluation->names ?> <?= $evaluation->lastnames ?><br>
         <?= $evaluation->sale->company->name ?><br>
-        Realizado el <?= $evaluation->completed->i18nformat('dd/MM/YYYY') ?>
+        Completed <?= $evaluation->completed->i18nformat('dd/MM/YYYY') ?>
     </div>
     <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
     <div class="pagination">1 de 10</div>
@@ -120,31 +120,40 @@
     <div style="margin-top: 100px">
         <h2>TERMS AND CONDITIONS</h2>
         <p>
-            This results report has been prepared by KEMPEM through a technological platform designed for this purpose. In accordance with the terms and conditions that you accepted at the time of participating, we inform you that the personal data provided and processed will be treated with strict confidentiality. In no way will they be shared, transferred, sold, exchanged or used individually, without your express consent. Our model is governed by the General Data Protection Regulation of the European Union (RGPD) and by national and international legislation on intellectual and industrial property. Except in the custom report, the results and analysis will never be publicly displayed individually, only as a group. The researchers authorized to come into contact with your personal data are committed to complying with the necessary technical and organizational precautions to guarantee the highest possible level of security of your data and results. As a user, you have a strictly private and exclusive right of use, in order to enjoy the benefits of the products and services provided by KEMPEM.
+            This results report has been prepared by KEMPEM through a technological platform designed for this purpose. 
+            In accordance with the terms and conditions that you accepted at the time of participating, we inform you that the 
+            personal data provided and processed will be treated with strict confidentiality. In no way will they be shared, 
+            transferred, sold, exchanged or used individually, without your express consent. Our model is governed by the 
+            General Data Protection Regulation of the European Union (RGPD) and by national and international legislation on
+             intellectual and industrial property. Except in the custom report, the results and analysis will never be publicly 
+             displayed individually, only as a group. The researchers authorized to come into contact with your personal data 
+             are committed to complying with the necessary technical and organizational precautions to guarantee the highest 
+             possible level of security of your data and results. As a user, you have a strictly private and exclusive right of use, 
+             in order to enjoy the benefits of the products and services provided by KEMPEM.
             </p>
             <p>
-            KEMPEM se reserva todos los derechos de propiedad intelectual e industrial 
-            sobre marcas, logotipos, signos distintivos, diseño gráfico, modelos teóricos, 
-            dimensiones, atributos y su combinación, ítems, definiciones, descripciones, 
-            gráficos de resultados, modelos, procesos y análisis estadístico, análisis de 
-            datos, instrumentos de medición y recolección de datos, encuestas, cuestionarios, 
-            algoritmos, diseño y estructura de informes de resultados, presentaciones, y 
-            literatura relacionados con la medición y análisis global de competencias, 
-            atributos y características personales, organizacionales, profesionales, 
-            ejecutivas, laborales o emprendedoras y su valoración objetiva individual y 
-            grupal, los cuales han sido desarrollados inéditamente por KEMPEM como 
-            resultado de investigaciones previas y en desarrollo que ha realizado desde 
-            el 2009. En ningún caso, se entenderá que la utilización de productos y 
-            servicios derivados de nuestro intercambio le confieren al usuario o al 
-            cliente derecho alguno, ni implica una renuncia, transmisión, licencia o 
-            cesión total o parcial de dichos derechos por parte de KEMPEM. </p>
+            KEMPEM reserves all intellectual and industrial property rights
+            on trademarks, logos, distinctive signs, graphic design, theoretical models,
+            dimensions, attributes and their combination, items, definitions, descriptions,
+            graphs of results, models, processes and statistical analysis, analysis of
+            data, measurement and data collection instruments, surveys, questionnaires,
+            algorithms, design and structure of results reports, presentations, and
+            literature related to the measurement and global analysis of competencies,
+            attributes and personal, organizational, professional,
+            executive, labor or entrepreneurial, and their objective individual and
+            group, which have been developed unprecedentedly by KEMPEM as
+            result of previous and ongoing research that has been carried out since
+            2009. In no case shall it be understood that the use of products and
+            services derived from our exchange give the user or the
+            customer any right, nor does it imply a waiver, transfer, license or
+            total or partial assignment of said rights by KEMPEM. </p>
             <p>
-            Queda prohibido modificar, copiar, transformar, reproducir, divulgar o
-            distribuir de cualquier forma, total o parcial cualesquiera de los elementos
-            propiedad intelectual e industrial de KEMPEM, para propósitos públicos,
-            privados y/o comerciales. Se prohíbe el uso, divulgación o reproducción de
-            este material o de su contenido total o parcialmente, a menos que usted,
-            como usuario, sea autorizado expresamente y por escrito por KEMPEM.</p>
+            It is prohibited to modify, copy, transform, reproduce, disclose or
+             distribute in any way, in whole or in part, any of the elements
+             intellectual and industrial property of KEMPEM, for public purposes,
+             private and/or commercial. The use, disclosure or reproduction of
+             this material or its content in whole or in part, unless you,
+             as a user, is expressly authorized in writing by KEMPEM..</p>
     </div>
     <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
     <div class="pagination">2 de 10</div>
@@ -152,7 +161,7 @@
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 100px">
-        <h2>CONTENIDO DE ESTE INFORME DE RESULTADOS</h2>
+        <h2>CONTENT OF THIS REPORT OF RESULTS</h2>
         <img class="centrado" src="<?= WWW_ROOT ?>/img/reporte/3.png" style="width: 900px; position: relative; left: 50%; margin-left: -450px;" alt="">
     </div>
     <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
@@ -161,43 +170,43 @@
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 150px">
-        <h2>MODELO KEMPEM</h2>
+        <h2>KEMPEM MODEL</h2>
         <p>
-        Las competencias son comportamientos que algunas personas dominan mejor que 
-        otras, lo que las hace eficientes en una situación determinada. Considerando 
-        que el emprendimiento se traduce en comportamientos, el enfoque basado en 
-        competencias expresa con mayor precisión aquellos atributos necesarios para 
-        la generación de tales comportamientos. ¿Qué es la competencia emprendedora? 
-        ¿Cuáles son sus dimensiones? ¿Cuáles son sus atributos?</p>
+        Competencies are behaviors that some people master better than
+         others, what makes them efficient in a given situation. Considering
+         that entrepreneurship translates into behaviors, the approach based on
+         competencies more precisely expresses those attributes necessary for
+         generating such behaviors. What is entrepreneurial competition?
+         What are its dimensions? What are its attributes?</p>
         <p>
-        El Modelo KEMPEM es una metodología validada y automatizada que permite medir 
-        y analizar 20 atributos de la competencia emprendedora agrupados en 3 
-        dimensiones: a) conocimientos, b) habilidades y, c) actitudes y valores); 
-        muestra el desempeño actual y el nivel de madurez del potencial emprendedor. 
-        La validez y fiabilidad de la metodología ha sido probada en varios grupos de 
-        interés: emprendedores, empleados, gerentes y estudiantes universitarios, de 
-        varios países, incluso, se han realizado algunas mediciones en adolescentes.</p>
+        The KEMPEM Model is a validated and automated methodology that allows measuring
+         and analyze 20 attributes of entrepreneurial competence grouped into 3
+         dimensions: a) knowledge, b) skills, and c) attitudes and values);
+         shows the current performance and maturity level of the potential entrepreneur.
+         The validity and reliability of the methodology has been tested in several groups of
+         interest: entrepreneurs, employees, managers and university students, from
+         Several countries have even carried out some measurements on adolescents.</p>
         <p>
-        Evaluamos los atributos que condicionan la acción emprendedora en los individuos, 
-        así como las formas efectivas de estimularlos. Es por ello que, con una 
-        investigación iniciada en el 2009, hemos definido, medido, analizado y validado 
-        los atributos del emprendedor y el valor de éstos en la creación, crecimiento y 
-        fortalecimiento empresarial. Ello nos llevó a desarrollar metodologías, modelos 
-        teóricos y estadísticos de análisis, algoritmos e instrumentos propios que permiten 
-        identificar, clasificar y jerarquizar el perfil del emprendedor. Para realizar 
-        los análisis, se utilizan herramientas de inteligencia artificial, específicamente 
-        redes neuronales (deep learning) las cuales evalúan sin sesgos ni intervención 
-        humana (aprendizaje no supervisado), el desempeño actual y predicen el desempeño 
-        futuro de la persona. KEMPEM involucra varias capas de algoritmo que trabajan con 
-        grandes volúmenes de datos no estructurados o etiquetados que le permiten aprender 
-        autónomamente, con lo cual en la medida que se ingresan más datos, el sistema se 
-        optimiza haciéndose más efectivo y eficiente.</p>
+        We evaluate the attributes that condition entrepreneurial action in individuals,
+        as well as effective ways to stimulate them. That is why, with a
+        research started in 2009, we have defined, measured, analyzed and validated
+        the attributes of the entrepreneur and their value in the creation, growth and
+        business strengthening. This led us to develop methodologies, models
+        theoretical and statistical analysis, algorithms and own instruments that allow
+        identify, classify and prioritize the profile of the entrepreneur. To do
+        analysis, artificial intelligence tools are used, specifically
+        neural networks (deep learning) which evaluate without bias or intervention
+        (unsupervised learning), current performance and predict performance
+        person's future. KEMPEM involves several algorithm layers that work with
+        large volumes of unstructured or labeled data that enable you to learn
+        autonomously, with which as more data is entered, the system
+        optimizes by becoming more effective and efficient.</p>
         <p>
-        El modelo tiene un 95% de confianza para todos sus ítems; una precisión en la 
-        caracterización del potencial emprendedor superior al 98% y un 99% de clasificación 
-        correcta. Adicionalmente, los resultados obtenidos por usted son comparados con una 
-        base de datos propia constituida por más de 7.200 personas que ya participaron en 
-        este estudio.</p>
+        The model has a 95% confidence level for all its items; a precision in
+         characterization of entrepreneurial potential above 98% and 99% classification
+         correct. Additionally, the results obtained by you are compared with a
+         own database made up of more than 7,200 people who have already participated in
+         This studio.</p>
     </div>
     <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
     <div class="pagination">4 de 10</div>
@@ -205,203 +214,203 @@
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 50px">
-    <h2>MODELO KEMPEM: ATRIBUTOS ANALIZADOS</h2>
+    <h2>KEMPEM MODEL: ATTRIBUTES ANALYZED</h2>
     <table>
         <tr>
             <th class="atributos head" width="15%">
-                APRENDIZAJE AUTÓNOMO
+                SELF LEARNING
             </th>
             <td class="atributos" width="85%">
-                Facultad para tomar información conceptual y abstracta sobre dónde y cómo obtener recursos poco
-                apreciados, tanto explícitos como tácitos y de cómo utilizarlos eficientemente.
+                Ability to take conceptual and abstract information about where and how to obtain scarce resources
+                 appreciated, both explicit and tacit, and how to use them efficiently.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                APROVECHAR OPORTUNIDADES
+                SEIZE OPPORTUNITIES
             </th>
             <td class="atributos">
-                Acción subjetiva orientada a la capacidad de identificar nuevas combinaciones de recursos e información
-                disponibles mediante la indagación constante en el medio ambiente y la observación de los cambios.
+                Subjective action oriented to the ability to identify new combinations of resources and information
+                 available through constant inquiry into the environment and observation of changes.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                AUTOEFICACIA
+                SELF-EFFICACY
             </th>
             <td class="atributos">
-                Creencia que tiene un individuo en su capacidad individual de perseguir y persistir para lograr un objetivo,
-                incluso ante el escepticismo de los demás.
+                Belief that an individual has in his or her individual ability to pursue and persist in order to achieve a goal,
+                 even in the face of skepticism from others.
+          </td>
+        </tr>
+        <tr>
+            <th class="atributos head">
+                CRITICAL THINKING
+            </th>
+            <td class="atributos">
+                Ability to make evaluations, judgments or make decisions associated with the analysis of an opportunity, the
+                 creation of a business and its growth, through the use of simplified mental models oriented to
+                 unite information that was previously unconnected.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                PENSAMIENTO CRÍTICO
+               COMPETITIVENESS
             </th>
             <td class="atributos">
-                Capacidad para realizar evaluaciones, juicios o tomar decisiones asociadas al análisis de una oportunidad, la
-                creación de un negocio y su crecimiento, mediante el uso de modelos mentales simplificados orientados a
-                unir información que previamente se encontraba inconexa.
+                Complex action-emotion of an individual who is aggressively involved in a fight
+                 chronic and incessant to achieve more in less time and that, if necessary, will do so against the odds.
+                 opposing efforts of other situations, media or people.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                COMPETITIVIDAD
+                LEGITIMACY
             </th>
             <td class="atributos">
-                Acción-emoción compleja de un individuo que se encuentra involucrado de forma agresiva en una lucha
-                crónica e incesante para alcanzar más en menos tiempo y que, de ser necesario, lo hará en contra de los
-                esfuerzos opuestos de otras situaciones, medios o personas.
+                Deliberate manipulation of the individual and his project, which allows external actors to perceive a
+                 sense of relative permanence of the project that is being started.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                LEGITIMIDAD
+                CREATIVITY AND INNOVATION
             </th>
             <td class="atributos">
-                Manipulación deliberada del individuo y su proyecto, lo cual permite a los actores externos percibir una
-                sensación de permanencia relativa del proyecto que se inicia.
+                Behavioral pattern of an individual who is interested in creating change and leading
+                 forward a dynamic that pushes the market on a model of imbalance that allows the development,
+                 acquire, build, or manage new products, processes, services, raw materials, and production methods
+                 organization.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                CREATIVIDAD E INNOVACIÓN
+                DEVELOPMENT OF CONTACT NETWORKS
             </th>
             <td class="atributos">
-                Patrón de comportamiento de un individuo que se encuentra interesado en crear el cambio y llevar
-                adelante una dinámica que empuje al mercado sobre un modelo de desequilibrio que permita desarrollar,
-                adquirir, construir o administrar nuevos productos, procesos, servicios, materias primas, y métodos de
-                organización.
+                It consists of building and transforming relationships of an affective nature into relationships of an emotional nature.
+                 instrumental, in order to gain confidence, be more efficient, promote the exchange of
+                 resources, provide ideas, access privileged business opportunities and obtain the commitment, help
+                 and skills of the actors involved to materialize a project or task and improve innovation.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                DESARROLLO DE REDES DE CONTACTOS
+                TRUST
             </th>
             <td class="atributos">
-                Consiste en construir y transformar relaciones de naturaleza afectiva en relaciones de naturaleza
-                instrumental, con la finalidad de adquirir confianza, ser más eficientes, promover el intercambio de
-                recursos, proveer ideas, acceder a oportunidades de negocios privilegiadas y obtener el compromiso, ayuda
-                y destrezas de los actores involucrados para materializar un proyecto o tarea y mejorar la innovación.
+                It arises when individuals are overly optimistic or unreasonably confident in the analysis they make.
+                 of a situation, exceeding their estimation skills and failing to recognize the uncertainty that
+                 really exist.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                CONFIANZA
+                PREVIOUS EXPERIENCE
             </th>
             <td class="atributos">
-                Surge cuando los individuos son demasiado optimistas o irracionalmente confiados en el análisis que hacen
-                de una situación, excediéndose en sus habilidades de estimación y no reconociendo la incertidumbre que
-                realmente existe.
+                Tacit knowledge acquired from the practices associated with the learning of the individual, includes
+                 work, professional, startup, managerial experiences and those that are acquired by the relationship
+                 with a specific industry.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                EXPERIENCIA PREVIA
+                NONCONFORMITY AND INDIVIDUALISM
             </th>
             <td class="atributos">
-                Conocimiento tácito adquirido a partir de las prácticas asociadas al aprendizaje del individuo, incluye
-                experiencias laborales, profesionales, de startup, gerenciales y aquellas que son adquiridas por la relación
-                con una industria específica.
+                This behavior brings with it the execution of a series of initiatives that contribute to improving the environment,
+                 implies thinking personally outside the margins established for the generation of new
+                 products, processes, services, markets, projects or companies.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                INCONFORMIDAD E INDIVIDUALISMO
+                LEADERSHIP
             </th>
             <td class="atributos">
-                Este comportamiento trae consigo ejecutar una serie de iniciativas que contribuyen a mejorar el entorno,
-                implica pensar a título personal fuera de los márgenes establecidos para la generación de nuevos
-                productos, procesos, servicios, mercados, proyectos o empresas.
+                Ability to define a vision of what is possible and engage people to work together on
+                 this, in order to transform it into reality, facilitating individual and collective efforts to achieve a
+                 shared goal.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                LIDERAZGO
+                LOCUS OF INTERNAL CONTROL
             </th>
             <td class="atributos">
-                Capacidad de definir una visión de lo que es posible y atraer a las personas para trabajar conjuntamente en
-                ello, a fin de transformarla en realidad, facilitando esfuerzos individuales y colectivos para lograr un
-                objetivo compartido.
+                Perception that rewards are a consequence of an individual's behavior, that is, the
+                 ability perceived by subjects to directly influence events in their lives.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                LOCUS DE CONTROL INTERNO
+                MOTIVATION
             </th>
             <td class="atributos">
-                Percepción de que las recompensas son consecuencia del comportamiento de un individuo, es decir, la
-                capacidad percibida por los sujetos para influenciar directamente en los acontecimientos de sus vidas.
+                Incentive that leads people to perform specific actions and that must necessarily be
+                 intrinsic, well, because they are motivated to achieve their goals, because they enjoy doing it, because they get
+                 personal satisfaction or because the activity is significant in itself for them.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                MOTIVACIÓN
+                PERSISTENCE
             </th>
             <td class="atributos">
-                Incentivo que conduce a las personas a realizar acciones específicas y que necesariamente debe ser
-                intrínseco, bien, porque están motivados a lograr sus metas, porque disfrutan haciéndolo, porque obtienen
-                satisfacción personal o porque la actividad es significativa en sí misma para ellos.
+                Continuity of actions that involve intense effort for long and difficult hours, regardless of the
+                 obstacles that arise in order to meet the proposed objectives. The level of commitment helps
+                 individuals to overcome fatigue and failures to meet a goal.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                PERSISTENCIA
+                PERSUASION
             </th>
             <td class="atributos">
-                Continuidad de acciones que implican esfuerzo intenso durante largas y difíciles horas, sin importar los
-                obstáculos que se presenten con el fin de cumplir los objetivos propuestos. El nivel de compromiso ayuda a
-                los individuos a superar el cansancio y los fracasos para cumplir una meta.
+                Process of influencing or convincing people to change their attitude or behavior in order to define
+                 a vision of what is possible or what you want to achieve.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                PERSUASIÓN
+                POSSESSION OF INFORMATION
             </th>
             <td class="atributos">
-                Proceso de influir o convencer a las personas para cambiar su actitud o comportamiento con el fin de definir
-                una visión de lo que es posible o de lo que se desea lograr.
+                It encompasses all those data, concepts or theories previously acquired and that individuals use
+                 during the process of discovering and taking advantage of opportunities and the formation of new
+                 business.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                POSESIÓN DE INFORMACIÓN
+                TENDENCY TO TAKE RISKS
             </th>
             <td class="atributos">
-                Abarca todos aquellos datos, conceptos o teorías adquiridos previamente y que los individuos emplean
-                durante el proceso de descubrimiento y aprovechamiento de oportunidades y la formación de nuevos
-                negocios.
+                Perceived probability of receiving rewards associated with the success of a specific situation and whose
+                 alternative provides fewer rewards as well as less severe consequences.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                TENDENCIA A ASUMIR RIESGOS
+                TOLERANCE FOR FAILURE AND UNCERTAINTY
             </th>
             <td class="atributos">
-                Probabilidad percibida de recibir recompensas asociadas con el éxito de una situación específica y cuya
-                alternativa provee menos recompensas, así como consecuencias menos severas.
+                Ability to accept that failure is a learning technique that provides the opportunity to
+                 diagnose why an error has occurred, failures provide information to discover
+                 uncertainties that were previously unpredictable.
             </td>
         </tr>
         <tr>
             <th class="atributos head">
-                TOLERANCIA AL FRACASO E INCERTIDUMBRE
+               DECISION MAKING AND PROBLEM SOLVING
             </th>
             <td class="atributos">
-                Capacidad de aceptar que el fracaso es una técnica de aprendizaje que provee la oportunidad de
-                diagnosticar por qué ha ocurrido un error, los fracasos proporcionan información para descubrir
-                incertidumbres que anteriormente eran impredecibles.
-            </td>
-        </tr>
-        <tr>
-            <th class="atributos head">
-                TOMA DE DECISIONES Y SOLUCIÓN DE PROBLEMAS
-            </th>
-            <td class="atributos">
-                Implica elegir entre efectos posibles de una acción empleando un conjunto de medios dados y, además,
-                elegir el conjunto de medios para lograr un efecto deseado, es aplicado especialmente en situaciones
-                donde no existen tendencias históricas, niveles anteriores de desempeño y poca o ninguna información
-                específica, por ende, el futuro es altamente incierto y la naturaleza o características precisas de los
-                objetivos no son conocidas con ningún grado de certeza.
+                It involves choosing between possible effects of an action using a given set of means and, in addition,
+                 choose the set of means to achieve a desired effect, it is applied especially in situations
+                 where there are no historical trends, previous levels of performance and little or no information
+                 therefore, the future is highly uncertain and the precise nature or characteristics of the
+                 targets are not known with any degree of certainty.
             </td>
         </tr>
     </table>
@@ -412,16 +421,16 @@
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin: 250px 100px 0px;">
-        <h2>GUÍA PARA LA INTERPRETACIÓN <br>
-        DE LOS RESULTADOS</h2>
+        <h2>GUIDE TO INTERPRETATE <br>
+        THE RESULTS</h2>
         <table>
             <tr>
                 <th width="10%">
                     <img src="<?= WWW_ROOT ?>/img/reporte/4.png" style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td width="90%">
-                    Lea con atención toda la información suministrada
-                    en cada sección.
+                    Read carefully all the information provided
+                     in each section.
                 </td>
             </tr>
             <tr>
@@ -429,7 +438,7 @@
                     <img src="<?= WWW_ROOT ?>/img/reporte/5.png" style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td>
-                    Revise detenidamente cada gráfico y su significado.
+                    Carefully review each chart and its meaning.
                 </td>
             </tr>
             <tr>
@@ -437,11 +446,11 @@
                     <img src="<?= WWW_ROOT ?>/img/reporte/6.png" style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td>
-                    No existen respuestas correctas o incorrectas. Los
-                    resultados obtenidos y expresados en este
-                    informe, representan lo que usted considera su
-                    comportamiento típico ante las situaciones
-                    planteadas en cada uno de los ítems.
+                    There are no right or wrong answers. The
+                     results obtained and expressed in this
+                     report, represent what you consider your
+                     typical behavior in situations
+                     raised in each of the items.
                 </td>
             </tr>
             <tr>
@@ -449,9 +458,9 @@
                     <img src="<?= WWW_ROOT ?>/img/reporte/7.png" style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td>
-                    Relacione sus comportamientos con los procesos
-                    clave de su actividad y analice cómo impactan en
-                    su desempeño presente y futuro.
+                    Relate your behaviors to processes
+                     key to your activity and analyze how they impact
+                     their present and future performance.
                 </td>
             </tr>
             <tr>
@@ -459,9 +468,9 @@
                     <img src="<?= WWW_ROOT ?>/img/reporte/8.png" style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td>
-                    Profundice en la comprensión del significado de
-                    cada atributo y sus implicaciones para el logro
-                    global de la competencia emprendedora.
+                    Deepen your understanding of the meaning of
+                     each attribute and its implications for achievement
+                     global entrepreneurial competition.
                 </td>
             </tr>
             <tr>
@@ -469,8 +478,8 @@
                     <img src="<?= WWW_ROOT ?>/img/reporte/9.png" style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td>
-                    Establezca planes de formación orientados a
-                    trabajar sobre los atributos débiles.
+                    Establish training plans aimed at
+                     Work on weak attributes.
                 </td>
             </tr>
         </table>
@@ -481,33 +490,33 @@
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 50px">
-        <h2>RESULTADOS POR ATRIBUTOS</h2>
+        <h2>RESULTS BY ATTRIBUTES</h2>
         <img class="centrado" src="data: image/png;base64,<?= base64_encode(file_get_contents('https://'.(isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:"evaluaciones.kempem.com").'/graph2/'.$evaluation->id)) ?>" alt="">
         <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
         <div class="pagination">7 de 10</div>
         <p style="margin-top: 30px;">
-        * El valor ideal representa la mayor puntuación en cada atributo obtenido 
-        por emprendedores de alto perfil. Este ideal puede variar con la incorporación 
-        de emprendedores con un nivel de desempeño más alto y se optimiza el algoritmo 
-        en la medida que se vayan incrementando los datos.
+        * The ideal value represents the highest score in each attribute obtained.
+         by high-profile entrepreneurs. This ideal may vary with the incorporation
+         of entrepreneurs with a higher level of performance and the algorithm is optimized
+         as the data increases.
         </p>
     </div>
 </div>
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 10px">
-        <h2>RESULTADOS POR DIMENSIONES</h2>
+        <h2>RESULTS BY DIMENSIONS</h2>
         <table>
             <tr>
                 <th width="15%">
                     <img src="<?= WWW_ROOT ?>/img/reporte/10.png"  style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td width="85%" class="justificado">
-                    <b>CONOCIMIENTOS:</b> capacidad de representar mentalmente conjuntos de
-                    datos, hechos, conceptos, nociones, información, proposiciones y
-                    categorías adquiridas en una o varias disciplinas mediante la
-                    experiencia o el aprendizaje y que son necesarios para su adecuado
-                    desempeño.
+                    <b>KNOWLEDGE:</b> ability to mentally represent sets of
+                     data, facts, concepts, notions, information, propositions and
+                     categories acquired in one or several disciplines through the
+                     experience or learning and that are necessary for its proper
+                     performance.
                 </td>
             </tr>
             <tr>
@@ -515,9 +524,9 @@
                     <img src="<?= WWW_ROOT ?>/img/reporte/11.png"  style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td class="justificado">
-                    <b>HABILIDADES:</b> capacidad para actuar e intervenir en la realidad
-                    mediante el uso de procedimientos o procesos necesarios para el
-                    desempeño de cualquier actividad, física o mental.
+                    <b>SKILLS:</b> ability to act and intervene in reality
+                     through the use of procedures or processes necessary for the
+                     performance of any activity, physical or mental.
                 </td>
             </tr>
             <tr>
@@ -525,22 +534,22 @@
                     <img src="<?= WWW_ROOT ?>/img/reporte/12.png"  style="margin: 20px 10px; width: 50px;" alt="">
                 </th>
                 <td class="justificado">
-                    <b>ACTITUDES Y VALORES:</b> consiste en la disposición y motivación del
-                    individuo a la acción y a la puesta en práctica de los valores ante
-                    situaciones profesionales y de la vida y tiene como base su
-                    autonomía, autoestima y proyecto ético de vida. Además,
-                    corresponde al sistema de creencias y disposiciones afectivas
-                    estables que la persona asume como pautas referenciales para
-                    actuar de una determinada manera.
+                    <b>ATTITUDES AND VALUES:</b> consists of the disposition and motivation of the
+                     individual to action and the implementation of values before
+                     professional and life situations and is based on their
+                     autonomy, self-esteem and ethical project of life. What's more,
+                     corresponds to the system of beliefs and affective dispositions
+                     stable that the person assumes as referential guidelines for
+                     act in a certain way.
                 </td>
             </tr>
         </table>
         <img class="centrado" src="data: image/png;base64,<?= base64_encode(file_get_contents('https://'.(isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:"evaluaciones.kempem.com").'/graph1/'.$evaluation->id)) ?>" alt="">
         <p style="margin-top: 30px;">
-        * El valor ideal representa la mayor puntuación en cada dimensión obtenido 
-        por emprendedores de alto perfil. Este ideal puede variar con la 
-        incorporación de emprendedores con un nivel de desempeño más alto y se 
-        optimiza el algoritmo en la medida que se vayan incrementando los datos. </p>
+        * The ideal value represents the highest score in each dimension obtained.
+         by high-profile entrepreneurs. This ideal may vary with the
+         incorporation of entrepreneurs with a higher level of performance and
+         optimizes the algorithm as the data increases. </p>
     </div>
     <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
     <div class="pagination">8 de 10</div>
@@ -548,31 +557,31 @@
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 100px">
-        <h2>NIVEL DE MADUREZ DEL POTENCIAL EMPRENDEDOR</h2>
+        <h2>LEVEL OF MATURITY OF THE ENTREPRENEURIAL POTENTIAL</h2>
         <p>
-        En el gráfico que se presenta a continuación, se han establecido tres niveles de 
-        madurez para clasificar y jerarquizar el potencial emprendedor: Bajo, medio y 
-        alto. Estos niveles están representados mediante los colores correspondientes 
-        a un semáforo, para ayudarle a identificarlos de una forma familiar. 
-        Es importante señalar que, tratándose del análisis de atributos personales, 
-        encontrar un perfil puro no es lo más habitual, con lo cual es probable que 
-        se encuentre en situaciones mixtas.</p>
+        In the graph below, three levels of
+         maturity to classify and rank entrepreneurial potential: Low, medium and
+         high. These levels are represented by the corresponding colors
+         to a traffic light, to help you identify them in a familiar way.
+         It is important to point out that, in the case of the analysis of personal attributes,
+         find a pure profile is not the most common, so it is likely that
+         find themselves in mixed situations.</p>
         <table class="semaforo" style="width: 500px; position: relative; left: 50%; margin: 30px 0px 30px -250px; display: block;">
             <tr>
                 <td class="rojo">
-                    MADUREZ BAJA
+                    LOW MATURITY
                 </td>
                 <td class="amarillo">
-                    MADUREZ MEDIA
+                    MEDIUM MATURITY
                 </td>
                 <td class="verde">
-                    MADUREZ ALTA
+                    HIGH MATURITY
                 </td>
             </tr>
         </table>
-        <h3 style="text-align: center;">Su nivel de madurez del potencial emprendedor:</h3>
+        <h3 style="text-align: center;">The level of maturity of the potential entrepreneur:</h3>
         <img class="centrado" style="margin: 30px auto;" src="data: image/png;base64,<?= base64_encode(file_get_contents('https://'.(isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:"evaluaciones.kempem.com").'/graph3/'.$evaluation->id)) ?>" alt="">
-        <h3 style="text-align: center;">Interpretación de los resultados:</h3>
+        <h3 style="text-align: center;">Results analysis:</h3>
         <table style="margin: 30px 150px;">
             <?php if($grafico < 3){ ?>
             <tr>
@@ -581,17 +590,17 @@
                     De 0 a 3 puntos
                 </th>
                 <td width="80%" class="justificado">
-                    Debe fortalecer su competencia emprendedora. Si realmente lo que desea
-                    es emprender, aún le queda camino por recorrer y aunque en su perfil se
-                    pueden encontrar atributos emprendedores, estos no son suficientes para
-                    comenzar y gestionar un proyecto emprendedor individualmente. Intente
-                    analizar las razones y tómese su tiempo para desarrollarse. Considere la
-                    baja puntuación de su cuestionario como una oportunidad para reconocer y
-                    reforzar aquellos atributos más débiles o complementarlos con otros
-                    miembros de su equipo emprendedor. Recuerde que no es suficiente con
-                    tener una buena idea, conocimientos del mercado o financiamiento, si
-                    después no se está preparado para afrontar los retos permanentes que
-                    supone poner en marcha un emprendimiento.
+                    You must strengthen your entrepreneurial competence. If you really want
+                     is to undertake, he still has a long way to go and although his profile shows
+                     can find entrepreneurial attributes, these are not enough to
+                     start and manage an entrepreneurial project individually. try
+                     Analyze the reasons and take your time to develop. Consider the
+                     low score on your quiz as an opportunity to recognize and
+                     reinforce those weaker attributes or complement them with others
+                     members of your entrepreneurial team. Remember that it is not enough
+                     have a good idea, knowledge of the market or financing, if
+                     then you are not prepared to face the permanent challenges that
+                     It means starting a business.
                 </td>
             </tr>
             <?php } ?>
@@ -602,13 +611,13 @@
                     De 3,1 a 7 puntos
                 </th>
                 <td class="justificado">
-                    Reúne muchas características para ser emprendedor. No obstante, debe
-                    evaluar y fortalecer algunos de sus atributos. Analice esos puntos débiles y
-                    fije una serie de acciones concretas para mejorarlos en un determinado
-                    plazo. Afrontar la puesta en marcha de un proyecto emprendedor requiere
-                    que la competencia emprendedora esté en un nivel mayor al obtenido.
-                    Cuenta con la capacidad y visión para emprender, lo cual es un punto
-                    fundamental.
+                    You have many characteristics to be an entrepreneur. However, you must
+                     evaluate and strengthen some of its attributes. Analyze those weak points and
+                     set a series of concrete actions to improve them in a certain
+                     term. Facing the start-up of an entrepreneurial project requires
+                     that the entrepreneurial competence is at a higher level than the one obtained.
+                     It has the capacity and vision to undertake, which is a point
+                     fundamental.
                 </td>
             </tr>
             <?php } ?>
@@ -619,15 +628,15 @@
                     De 7,1 a 10 puntos
                 </th>
                 <td class="justificado">
-                    Muestra atributos suficientes para ser un excelente emprendedor. Estas
-                    cualidades conjuntamente con el adecuado desarrollo de su proyecto, son
-                    bases sólidas para iniciar su camino hacia la ejecución de su
-                    emprendimiento. Puede que requiera información o asesoramiento sobre
-                    temas puntuales para poner su emprendimiento en marcha, pero ya tiene
-                    el nivel de madurez suficiente para iniciarse como emprendedor. Ello no
-                    quiere decir que ya tenga asegurado el éxito, pero sin duda los atributos
-                    personales que posee son los necesarios para desempeñarse por encima de
-                    los niveles promedios.
+                    You Show sufficient attributes to be an excellent entrepreneur. Are
+                     qualities together with the proper development of your project, are
+                     solid foundations to start your path towards the execution of your
+                     entrepreneurship. You may require information or advice on
+                     specific issues to start your business, but you already have
+                     the level of maturity sufficient to start as an entrepreneur. It doesn't
+                     means that success is already assured, but without a doubt the attributes
+                     personal assets that he possesses are those necessary to perform above
+                     the average levels.
                 </td>
             </tr>
             <?php } ?>
