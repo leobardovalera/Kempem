@@ -104,7 +104,7 @@
 <div class="page">
     <div style="position: absolute; top: 30%; width: 100%;">
         <img class="centrado" src="<?= WWW_ROOT ?>/img/reporte/1.png" alt="">
-        <h1>RESULTS REPORT</h1>
+        <h1>INFORME DE RESULTADOS</h1>
         <h2><?= $evaluation->instrument->name ?></h2>
     </div>
     <div class="centrado" style="position: absolute; bottom: 100px; width: 100%;">
@@ -118,10 +118,24 @@
 <div class="page">
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 100px">
-        <h2>TERMS AND CONDITIONS</h2>
+        <h2>TÉRMINOS Y CONDICIONES</h2>
         <p>
-            This results report has been prepared by KEMPEM through a technological platform designed for this purpose. In accordance with the terms and conditions that you accepted at the time of participating, we inform you that the personal data provided and processed will be treated with strict confidentiality. In no way will they be shared, transferred, sold, exchanged or used individually, without your express consent. Our model is governed by the General Data Protection Regulation of the European Union (RGPD) and by national and international legislation on intellectual and industrial property. Except in the custom report, the results and analysis will never be publicly displayed individually, only as a group. The researchers authorized to come into contact with your personal data are committed to complying with the necessary technical and organizational precautions to guarantee the highest possible level of security of your data and results. As a user, you have a strictly private and exclusive right of use, in order to enjoy the benefits of the products and services provided by KEMPEM.
-            </p>
+            Este informe de resultados ha sido elaborado por KEMPEM mediante una
+            plataforma tecnológica diseñada para tal fin. De acuerdo con los términos y
+            condiciones que aceptó al momento de participar, le informamos que los
+            datos personales proporcionados y procesados serán tratados con estricta
+            confidencialidad. De ninguna manera serán compartidos, cedidos, vendidos,
+            intercambiados o utilizados de forma individual, sin su consentimiento
+            expreso. Nuestro modelo se rige por el Reglamento General de Protección de
+            Datos de la Unión Europea (RGPD) y por la legislación nacional e internacional
+            sobre propiedad intelectual e industrial. Salvo en el informe personalizado, 
+            los resultados y análisis nunca se mostrarán públicamente de manera individual, 
+            solo de forma grupal. Los investigadores autorizados para entrar en contacto 
+            con sus datos personales, están comprometidos a cumplir con las precauciones 
+            técnicas y organizativas necesarias para garantizar el mayor nivel de seguridad 
+            posible de sus datos y resultados. Usted como usuario, dispone de un derecho 
+            de uso estrictamente privado y exclusivo, con la finalidad de disfrutar de las 
+            prestaciones de los productos y servicios proporcionados por KEMPEM.</p>
             <p>
             KEMPEM se reserva todos los derechos de propiedad intelectual e industrial 
             sobre marcas, logotipos, signos distintivos, diseño gráfico, modelos teóricos, 
