@@ -81,7 +81,7 @@ usuario_conocimiento_scoring    = 2*usuario_puntuacion_conocimiento.mean()
 
 conocimiento_ideal = 9.82
 Ideal['Usuario'] = pd.DataFrame(usuario_puntuacion_conocimiento.transpose())
-Ideal.index = ['Previous experience','Self learning','Possesion of information','Critical thinking']
+Ideal.index = ['Previous experience','Autonomous Learning ','Possesion of information','Critical thinking']
 
 # Imprimir los resultados de la dimension conocimiento
 output_file     = open(f"{path}/files/{usuario_csv}_output.csv", 'w')
