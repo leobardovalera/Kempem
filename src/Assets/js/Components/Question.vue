@@ -112,25 +112,6 @@
                     <label v-html="enunciado(data)" :for="`DT_${data.id}`"></label>
                     <div class="custom-control custom-radio">
                         <input type="radio" v-model="value" value="Si" @change="update" class="custom-control-input" :id="`YN_${data.id}_Si`" required>
-                        <label class="custom-control-label" :for="`YN_${data.id}_Si`">Yes</label>
-                    </div>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" v-model="value" value="No" @change="update" class="custom-control-input" :id="`YN_${data.id}_No`" required>
-                        <label class="custom-control-label" :for="`YN_${data.id}_No`">No</label>
-                    </div>
-                    <div class="invalid-feedback">
-                        Debe seleccionar una respuesta
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-4" v-else-if="data.type =='SN'">
-            <div class="row">
-                <div class="col required" data-type="radio">
-                    <label v-html="enunciado(data)" :for="`DT_${data.id}`"></label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" v-model="value" value="Si" @change="update" class="custom-control-input" :id="`YN_${data.id}_Si`" required>
                         <label class="custom-control-label" :for="`YN_${data.id}_Si`">Si</label>
                     </div>
                     <div class="custom-control custom-radio">
@@ -143,7 +124,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
