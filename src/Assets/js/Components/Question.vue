@@ -142,7 +142,7 @@
                 disable: false,
                 likert: [
                     "Totalmente en desacuerdo",
-                    "En desacuerdo (disagree)",
+                    "En desacuerdo",
                     "Algo en desacuerdo",
                     "Indiferente",
                     "Algo de acuerdo",
