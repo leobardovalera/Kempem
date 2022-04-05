@@ -433,7 +433,12 @@ class EvaluationsController extends AppController
         $grafico = isset($data[6]) && isset($data[6][1])?$data[6][1]/10:null;
 
         $CakePdf = new \CakePdf\Pdf\CakePdf();
-        $CakePdf->template('reporte');
+	  // Done by Leo. Erase if it is wrong
+      if ($evaluation->instrument->name == "Competencia emprendedora"){
+          $CakePdf->template('reporte_spanish');
+      } else {
+            $CakePdf->template('reporte_english');
+        }
 
         $CakePdf->viewVars([
             'evaluation' => $evaluation,
