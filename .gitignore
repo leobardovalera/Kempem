@@ -93,3 +93,10 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+src/jpgraph/*
+src/Scripts/files/*
+
+#descartadas las librerías externas
+src/string-master/*
+src/gears-pdf-master/*
+src/di-master/*

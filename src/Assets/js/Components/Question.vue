@@ -1,7 +1,7 @@
 <template>
     <div id="question" class="question-space" :class="`q${data.type}`">
-        <div class="mb-4" v-if="data.type =='17'">
-            <div v-html="enunciado(data)" class="lead text-center mb-3 mb-md-4"></div>
+        <div class="mb-4 w-100" v-if="data.type =='17'">
+            <div v-html="enunciado(data)" class="lead text-center mb-3 mb-md-4 text17"></div>
             <div class="row no-gutters mb-4">
                 <div class="col text-center">
                     <div class="liker-group btn-group btn-group-toggle">
@@ -13,10 +13,10 @@
                     </div>
                 </div>
             </div>
-            <p class="d-none d-md-block text-center"><small>Puede usar las teclas del 1 al 7 de su teclado</small></p>
+            <p class="d-none d-md-block text-center"><small>{{language=="EN"?"You can use the keys 1 to 7 on your keyboard":"Puede usar las teclas del 1 al 7 de su teclado"}}</small></p>
         </div>
 
-        <div class="mb-4" v-else-if="data.type =='RA'">
+        <div class="mb-4 w-100" v-else-if="data.type =='RA'">
             <div class="row">
                 <div class="col required" data-type="radio">
                     <label :for="`RA_${data.id}`" v-html="enunciado(data)"></label>
@@ -25,13 +25,13 @@
                         <label class="custom-control-label" :for="`RA_${data.id}_${index}`">{{op}}</label>
                     </div>
                     <div class="invalid-feedback">
-                        Debe seleccionar una respuesta
+                        {{language=="EN"?"You must select an answer":"Debe seleccionar una respuesta"}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="mb-4" v-else-if="data.type =='DT'">
+        <div class="mb-4 w-100" v-else-if="data.type =='DT'">
             <div class="row">
                 <div class="col">
                     <label v-html="enunciado(data)" :for="`DT_${data.id}`"></label>
@@ -45,7 +45,7 @@
                                 placeholder="dd/mm/yyyy"
                             />
                             <div class="invalid-feedback">
-                                Este valor es requerido
+                                {{language=="EN"?"This value is required":"Este valor es requerido"}}
                             </div>
                     </template>
                     </v-date-picker>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="mb-4" v-else-if="data.type =='SE'">
+        <div class="mb-4 w-100" v-else-if="data.type =='SE'">
             <div class="row">
                 <div class="col">
                     <label v-html="enunciado(data)" :for="`SE_${data.id}`"></label>
@@ -62,37 +62,37 @@
                         <option v-for="(op,i) in data.options.opciones" :key="i" :value="op">{{op}}</option>
                     </select>
                     <div class="invalid-feedback">
-                        Este valor es requerido
+                        {{language=="EN"?"This value is required":"Este valor es requerido"}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="mb-4" v-else-if="data.type =='TX'">
+        <div class="mb-4 w-100" v-else-if="data.type =='TX'">
             <div class="row">
                 <div class="col">
                     <label v-html="enunciado(data)" :for="`TX_${data.id}`"></label>
                     <input type="text" v-model="value" @change="update" class="required form-control">
                     <div class="invalid-feedback">
-                        Este valor es requerido
+                        {{language=="EN"?"This value is required":"Este valor es requerido"}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="mb-4" v-else-if="data.type =='NU'">
+        <div class="mb-4 w-100" v-else-if="data.type =='NU'">
             <div class="row">
                 <div class="col">
                     <label v-html="enunciado(data)" :for="`DT_${data.id}`"></label>
                     <input type="number" v-model="value" @change="update" class="required form-control">
                     <div class="invalid-feedback">
-                        Este valor es requerido
+                        {{language=="EN"?"This value is required":"Este valor es requerido"}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="mb-4" v-else-if="data.type =='CB'">
+        <div class="mb-4 w-100" v-else-if="data.type =='CB'">
             <div class="row">
                 <div class="col">
                     <input class="form-check-input required" :id="`CB_${data.id}`" data-type="checkbox" type="checkbox" @click="update" v-model="value"> 
@@ -100,40 +100,37 @@
                         <span v-html="enunciado(data)"></span>
                     </label>
                     <div class="invalid-feedback">
-                        Debe seleccionar la casilla
+                        {{language=="EN"?"You must select the box":"Debe seleccionar la casilla"}}
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="mb-4" v-else-if="data.type =='YN'">
+        <div class="mb-4 w-100" v-else-if="data.type =='YN'">
             <div class="row">
                 <div class="col required" data-type="radio">
                     <label v-html="enunciado(data)" :for="`DT_${data.id}`"></label>
                     <div class="custom-control custom-radio">
                         <input type="radio" v-model="value" value="Si" @change="update" class="custom-control-input" :id="`YN_${data.id}_Si`" required>
-                        <label class="custom-control-label" :for="`YN_${data.id}_Si`">Si</label>
+                        <label class="custom-control-label" :for="`YN_${data.id}_Si`">{{language=="EN"?"Yes":"Si"}}</label>
                     </div>
                     <div class="custom-control custom-radio">
                         <input type="radio" v-model="value" value="No" @change="update" class="custom-control-input" :id="`YN_${data.id}_No`" required>
-                        <label class="custom-control-label" :for="`YN_${data.id}_No`">No</label>
+                        <label class="custom-control-label" :for="`YN_${data.id}_No`">{{language=="EN"?"No":"No"}}</label>
                     </div>
                     <div class="invalid-feedback">
-                        Debe seleccionar una respuesta (You must select an answer)
+                        {{language=="EN"?"You must select an answer":"Debe seleccionar una respuesta"}}
                     </div>
                 </div>
             </div>
         </div>
-
-
-        
     </div>
 </template>
 
 <script>
     export default {
         name: "question",
-        props: ['data','version'],
+        props: ['data','version','language'],
         
         data() {
             return {
@@ -141,13 +138,13 @@
                 value:null,
                 disable: false,
                 likert: [
-                    "Totalmente en desacuerdo",
-                    "En desacuerdo",
-                    "Algo en desacuerdo",
-                    "Indiferente",
-                    "Algo de acuerdo",
-                    "De acuerdo",
-                    "Totalmente de acuerdo",
+                    this.language=="EN"?"Totally disagree":"Totalmente en desacuerdo",
+                    this.language=="EN"?"Disagree":"En desacuerdo",
+                    this.language=="EN"?"Somewhat disagree":"Algo en desacuerdo",
+                    this.language=="EN"?"Indiferent":"Indiferente",
+                    this.language=="EN"?"Somewhat agree":"Algo de acuerdo",
+                    this.language=="EN"?"Agree":"De acuerdo",
+                    this.language=="EN"?"Totally agree":"Totalmente de acuerdo",
                 ]
             }
         },

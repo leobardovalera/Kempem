@@ -5,8 +5,8 @@
                 <h3 class="section-title m-0">{{screen.name}}</h3>
                 <div class="section-questions container">
                     <div class="section-description" v-html="screen.description"></div>
-                    <question :ref="`question${q}`" class="col question" v-for="(q,p) in screen.questions" :key="p" @answer="setanswer" :version="version" :data="question(q)"></question>
-                </div>
+                    <question :ref="`question${q}`" class="col question" v-for="(q,p) in screen.questions" :key="p" @answer="setanswer" :version="version" :language="instrument.language" :data="question(q)"></question>
+                </div> 
             </div>
         </div>
         <div class="section-controls" v-if="screens.length - 1 > acscreen">
@@ -15,11 +15,11 @@
                 </div>
                 <div class="col-12 col-md-6 text-center">
                     <div class="progress">
-                        <div class="progress-bar bg-success text-black" role="progressbar" :style="`width: ${progress}%`" :aria-valuenow="progress" aria-valuemin="0" aria-valuemax="100">{{Math.round(progress)}}%</div>
+                        <div class="progress-bar bg-success text-black" role="progressbar" :style="`width: ${progress}%`" :aria-valuenow="progress" aria-valuemin="0" aria-valuemax="100">{{Math.ceil(progress)}}%</div>
                     </div>
                 </div>
                 <div class="col text-right">
-                    <button v-if="actualscreen && !actualscreen.autoadvance" class="btn btn-primary" @click="nextscreen()">Continuar <i class="fas fa-fw fa-arrow-right"></i></button>
+                    <button v-if="actualscreen && !actualscreen.autoadvance" class="btn btn-primary" @click="nextscreen()">{{instrument.language=='EN'?'Continue':'Continuar'}} <i class="fas fa-fw fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
 
         computed: {
             progress(){
-                return this.respondidas + 1 / this.totalscreens;
+                return (this.respondidas + 1) / this.totalscreens * 100;
             },
             actualscreen(){
                 return this.screens[this.acscreen];
@@ -239,3 +239,11 @@
     }
 </script>
 
+<style>
+    .text17{
+        min-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

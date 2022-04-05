@@ -36,7 +36,7 @@ use Cake\Collection\Collection;
             <td>
                 <?= h($sale->company->name) ?><br />
                 <?= h($sale->country?$countries[$sale->country]:'País no definido') ?><br />
-                <?= h($sale->instrument->name) ?>
+                <?= $sale->instrument?$sale->instrument->name:"<b class='text-danger'>Por favor no borrar información de la BD</b>" ?>
             </td>
             <td><?= h($sale->created) ?></td>
             <td>
