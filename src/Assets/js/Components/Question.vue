@@ -112,7 +112,7 @@
                     <label v-html="enunciado(data)" :for="`DT_${data.id}`"></label>
                     <div class="custom-control custom-radio">
                         <input type="radio" v-model="value" value="Si" @change="update" class="custom-control-input" :id="`YN_${data.id}_Si`" required>
-                        <label class="custom-control-label" :for="`YN_${data.id}_Si`">Si</label>
+                        <label class="custom-control-label" :for="`YN_${data.id}_Si`">Si(Yes)</label>
                     </div>
                     <div class="custom-control custom-radio">
                         <input type="radio" v-model="value" value="No" @change="update" class="custom-control-input" :id="`YN_${data.id}_No`" required>
@@ -124,6 +124,9 @@
                 </div>
             </div>
         </div>
+
+
+        
     </div>
 </template>
 
