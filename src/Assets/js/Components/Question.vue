@@ -141,13 +141,13 @@
                 value:null,
                 disable: false,
                 likert: [
-                    "Totalmente en desacuerdo (strongly disagree) ",
+                    "Totalmente en desacuerdo",
                     "En desacuerdo (disagree)",
-                    "Algo en desacuerdo (Something disagree)",
-                    "Indiferente (Indifferent)",
-                    "Algo de acuerdo (Somewhat agree)",
-                    "De acuerdo (Agree)",
-                    "Totalmente de acuerdo (Totally agree)",
+                    "Algo en desacuerdo",
+                    "Indiferente",
+                    "Algo de acuerdo",
+                    "De acuerdo",
+                    "Totalmente de acuerdo",
                 ]
             }
         },
