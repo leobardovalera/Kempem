@@ -92,8 +92,14 @@ class DownloadShell extends Shell
             $grafico = isset($data[6]) && isset($data[6][1])?$data[6][1]/10:null;
     
             $CakePdf = new \CakePdf\Pdf\CakePdf();
-            $CakePdf->template('reporte');
-    
+            // $CakePdf->template('reporte');
+            
+            if ($evaluation->instrument->language == "ES"){
+                $CakePdf->template('reporte_spanish');
+            } else {
+                  $CakePdf->template('reporte_english');
+              }
+
             $CakePdf->viewVars([
                 'evaluation' => $evaluation,
                 'grafico' => $grafico,
