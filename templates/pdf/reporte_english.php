@@ -162,7 +162,7 @@
     <img src="<?= WWW_ROOT ?>/img/reporte/2.png" class="logo_page">
     <div style="margin-top: 100px">
         <h2>CONTENT OF THIS REPORT OF RESULTS</h2>
-        <img class="centrado" src="<?= WWW_ROOT ?>/img/reporte/3.png" style="width: 900px; position: relative; left: 50%; margin-left: -450px;" alt="">
+        <img class="centrado" src="<?= WWW_ROOT ?>/img/reporte/3E.png" style="width: 900px; position: relative; left: 50%; margin-left: -450px;" alt="">
     </div>
     <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
     <div class="pagination">3 de 10</div>
