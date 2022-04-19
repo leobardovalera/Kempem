@@ -434,7 +434,7 @@ class EvaluationsController extends AppController
 
         $CakePdf = new \CakePdf\Pdf\CakePdf();
 	  // Done by Leo. Erase if it is wrong
-      if ($evaluation->instrument->name == "Competencia emprendedora"){
+      if ($evaluation->instrument->language == "ES"){
           $CakePdf->template('reporte_spanish');
       } else {
             $CakePdf->template('reporte_english');
