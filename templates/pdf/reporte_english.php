@@ -112,7 +112,7 @@
         <?= $evaluation->sale->company->name ?><br>
         Completed <?= $evaluation->completed->i18nformat('dd/MM/YYYY') ?>
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
     <div class="pagination">1 de 10</div>
 </div>
 <div class="page">
@@ -155,7 +155,7 @@
              this material or its content in whole or in part, unless you,
              as a user, is expressly authorized in writing by KEMPEM..</p>
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
     <div class="pagination">2 de 10</div>
 </div>
 <div class="page">
@@ -164,7 +164,7 @@
         <h2>CONTENT OF THIS REPORT OF RESULTS</h2>
         <img class="centrado" src="<?= WWW_ROOT ?>/img/reporte/3E.png" style="width: 900px; position: relative; left: 50%; margin-left: -450px;" alt="">
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
     <div class="pagination">3 de 10</div>
 </div>
 <div class="page">
@@ -208,7 +208,7 @@
          own database made up of more than 7,200 people who have already participated in
          This studio.</p>
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
     <div class="pagination">4 de 10</div>
 </div>
 <div class="page">
@@ -415,7 +415,7 @@
         </tr>
     </table>
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
     <div class="pagination">5 de 10</div>
 </div>
 <div class="page">
@@ -484,7 +484,7 @@
             </tr>
         </table>
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
     <div class="pagination">6 de 10</div>
 </div>
 <div class="page">
@@ -492,7 +492,7 @@
     <div style="margin-top: 50px">
         <h2>RESULTS BY ATTRIBUTES</h2>
         <img class="centrado" src="data: image/png;base64,<?= base64_encode(file_get_contents('https://'.(isset($_SERVER['HTTP_HOST'])?$_SERVER['HTTP_HOST']:"evaluaciones.kempem.com").'/graph2/'.$evaluation->id)) ?>" alt="">
-        <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+        <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
         <div class="pagination">7 de 10</div>
         <p style="margin-top: 30px;">
         * The ideal value represents the highest score in each attribute obtained.
@@ -551,7 +551,7 @@
          incorporation of entrepreneurs with a higher level of performance and
          optimizes the algorithm as the data increases. </p>
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. </div>
     <div class="pagination">8 de 10</div>
 </div>
 <div class="page">
@@ -586,7 +586,7 @@
             <?php if($grafico < 3){ ?>
             <tr>
                 <th width="20%" class="rojo">
-                    Madurez Baja
+                    Low Maturity
                     De 0 a 3 puntos
                 </th>
                 <td width="80%" class="justificado">
@@ -607,7 +607,7 @@
             <?php if($grafico >= 3 && $grafico < 7){ ?>
             <tr>
                 <th class="amarillo">
-                    Madurez Media
+                    Medium Maturity
                     De 3,1 a 7 puntos
                 </th>
                 <td class="justificado">
@@ -624,7 +624,7 @@
             <?php if($grafico >= 7){ ?>
             <tr>
                 <th class="verde">
-                    Madurez Alta
+                    Hight Maturity
                     De 7,1 a 10 puntos
                 </th>
                 <td class="justificado">
@@ -642,7 +642,7 @@
             <?php } ?>
         </table>
     </div>
-    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibido su uso, divulgación y reproducción total o parcial</div>
+    <div class="copyright">Copyright ® KEMPEM. All rights reserved. Prohibited its use, disclosure and total or partial reproduction</div>
     <div class="pagination">9 de 10</div>
 </div>
 <div class="page last-page">
