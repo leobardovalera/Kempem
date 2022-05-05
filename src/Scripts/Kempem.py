@@ -626,7 +626,7 @@ Global = 10*(usuario_conocimiento_scoring+usuario_habilidades_scoring+10*usuario
 #Global = 50*(Global - 51.7743675179597)/(80.3937217860003-51.7743675179597)+48
 Global = Global-Global.mean()
 Global = 50*Global/Global.max()
-
+Global = Global + 48
 
 output_file.write(f"Global:{round(Global,2)}")
 output_file.write(f"\n")
