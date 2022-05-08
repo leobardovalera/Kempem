@@ -573,7 +573,7 @@ Act.columns= ['Ideal']
 
 usuario_puntuacion_actitudes = np.matmul(usuario_actitudes, Table10_matrix)
     
-#usuario_puntuacion_actitudes=usuario_puntuacion_actitudes[0]
+usuario_puntuacion_actitudes=usuario_puntuacion_actitudes[0]
 
 usuario_puntuacion_actitudes[0] = 4*np.exp(usuario_puntuacion_actitudes[0])/(np.exp(usuario_puntuacion_actitudes[0])+1)+1
 
