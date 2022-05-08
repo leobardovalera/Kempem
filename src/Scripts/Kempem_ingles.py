@@ -586,7 +586,9 @@ output_file.write(f"\n")
 
 # Imprimir el valor Global
 Global = 10*(usuario_conocimiento_scoring+usuario_habilidades_scoring+10*usuario_actitudes_scoring)/12
-Global = 50*(Global - 51.7743675179597)/(80.3937217860003-51.7743675179597)+48
+
+#Global = 50*(Global - 51.7743675179597)/(80.3937217860003-51.7743675179597)+48
+
 output_file.write(f"Global:{round(Global,2)}")
 output_file.write(f"\n")
 output_file.close()
