@@ -289,21 +289,13 @@ class SalesController extends AppController
             return !empty($value->started);
         })->toArray());
 
-        if ($evaluation->instrument->language == "ES"){
         $context[] = "V_EdadPromedio_".round((new Collection($report['fechaNacimiento']['answers']))->map(function ($value, $key, $iterator){
             $fechaNac = Time::parse($key);
             $now = new Time();
             $edad = $now->diff($fechaNac);
             return $edad->format('%y');
         })->avg());
-        } else {
-            $context[] = "V_EdadPromedio_".round((new Collection($report['birthday']['answers']))->map(function ($value, $key, $iterator){
-                $fechaNac = Time::parse($key);
-                $now = new Time();
-                $edad = $now->diff($fechaNac);
-                return $edad->format('%y');    
-        }
-
+        
         $puntaje = (new Collection($evaluations))->map(function ($value, $key, $iterator){
             $data = explode("\n",$value->results);
             $data = explode(":",$data[6]);
