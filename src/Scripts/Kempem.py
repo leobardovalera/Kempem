@@ -202,12 +202,12 @@ usuario_puntuacion_habilidades = np.matmul(usuario_habilidades, Table6_matrix)
 
 usuario_puntuacion_habilidades=usuario_puntuacion_habilidades[0]
 
-usuario_puntuacion_habilidades[0] = 4*np.exp(usuario_puntuacion_habilidades[0])/(usuario_puntuacion_habilidades[0])+1)+1
-usuario_puntuacion_habilidades[1] = 4*np.exp(usuario_puntuacion_habilidades[1])/(usuario_puntuacion_habilidades[1])+1)+1
-usuario_puntuacion_habilidades[2] = 4*np.exp(usuario_puntuacion_habilidades[2])/(usuario_puntuacion_habilidades[2])+1)+1
-usuario_puntuacion_habilidades[3] = 4*np.exp(usuario_puntuacion_habilidades[3])/(usuario_puntuacion_habilidades[3])+1)+1
-usuario_puntuacion_habilidades[4] = 4*np.exp(usuario_puntuacion_habilidades[4])/(usuario_puntuacion_habilidades[4])+1)+1
-usuario_puntuacion_habilidades[5] = 4*np.exp(usuario_puntuacion_habilidades[5])/(usuario_puntuacion_habilidades[5])+1)+1
+usuario_puntuacion_habilidades[0] = 4*np.exp(usuario_puntuacion_habilidades[0])/((usuario_puntuacion_habilidades[0])+1)+1
+usuario_puntuacion_habilidades[1] = 4*np.exp(usuario_puntuacion_habilidades[1])/((usuario_puntuacion_habilidades[1])+1)+1
+usuario_puntuacion_habilidades[2] = 4*np.exp(usuario_puntuacion_habilidades[2])/((usuario_puntuacion_habilidades[2])+1)+1
+usuario_puntuacion_habilidades[3] = 4*np.exp(usuario_puntuacion_habilidades[3])/((usuario_puntuacion_habilidades[3])+1)+1
+usuario_puntuacion_habilidades[4] = 4*np.exp(usuario_puntuacion_habilidades[4])/((usuario_puntuacion_habilidades[4])+1)+1
+usuario_puntuacion_habilidades[5] = 4*np.exp(usuario_puntuacion_habilidades[5])/((usuario_puntuacion_habilidades[5])+1)+1
 
 usuario_habilidades_scoring    = 2*usuario_puntuacion_habilidades.mean()
 
