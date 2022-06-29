@@ -33,7 +33,7 @@ $this->extend('/layout/instrument');
     </div>
     <div class="row mt-4">
         <div class="col">
-            <small><b>*</b> El código de validación le fue suministrado por la organización para la cual está realizando este test. En caso que no lo posea, debe solicitárselos. Si desea realizar el test a título personal comuníquese con: <a href="mailto:test@kempem.com" target="_blank">test@kempem.com</a> e indique en el asunto el nombre del test que desea ejecutar. </small>
+            <small><b>*</b> El código de validación le fue suministrado por la organización para la cual está realizando este test. En caso que no lo posea, debe solicitárselos.  </small>
         </div>
     </div>
 </div>

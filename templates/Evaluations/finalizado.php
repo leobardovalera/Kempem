@@ -7,9 +7,6 @@
                 <p class="lead">
                     Aplicación anulada por patrón repetitivo de respuestas.
                 </p>
-                <p class="lead">
-                    Para mayor información comuníquese con: <a href="mailto:test@kempem.com">test@kempem.com</a>
-                </p>
             </div>
         </div>
     </div>
