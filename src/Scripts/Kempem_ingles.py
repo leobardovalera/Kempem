@@ -73,10 +73,10 @@ usuario_puntuacion_conocimiento = np.matmul(usuario_conocimiento, Table2_matrix)
     
 usuario_puntuacion_conocimiento = usuario_puntuacion_conocimiento[0] 
 
-usuario_puntuacion_conocimiento[0] = 4*np.exp(0.5*usuario_puntuacion_conocimiento[0])/(np.exp(0.5*usuario_puntuacion_conocimiento[0])+1)+1
-usuario_puntuacion_conocimiento[1] = 4*np.exp(0.5*usuario_puntuacion_conocimiento[1])/(np.exp(0.5*usuario_puntuacion_conocimiento[1])+1)+1
-usuario_puntuacion_conocimiento[2] = 4*np.exp(0.5*usuario_puntuacion_conocimiento[2])/(np.exp(0.5*usuario_puntuacion_conocimiento[2])+1)+1
-usuario_puntuacion_conocimiento[3] = 4*np.exp(0.5*usuario_puntuacion_conocimiento[3])/(np.exp(0.5*usuario_puntuacion_conocimiento[3])+1)+1
+usuario_puntuacion_conocimiento[0] = min(4*np.exp(0.5*usuario_puntuacion_conocimiento[0])/(np.exp(0.5*usuario_puntuacion_conocimiento[0])+1)+1,0.9*4.8)
+usuario_puntuacion_conocimiento[1] = min(4*np.exp(usuario_puntuacion_conocimiento[1])/(np.exp(usuario_puntuacion_conocimiento[1])+1)+1,0.9*4.75)
+usuario_puntuacion_conocimiento[2] = min(4*np.exp(usuario_puntuacion_conocimiento[2])/(np.exp(usuario_puntuacion_conocimiento[2])+1)+1,0.9*4.71)
+usuario_puntuacion_conocimiento[3] = min(4*np.exp(usuario_puntuacion_conocimiento[3])/(np.exp(usuario_puntuacion_conocimiento[3])+1)+1,0.9*4.67)
     
 usuario_conocimiento_scoring    = 2*usuario_puntuacion_conocimiento.mean()
 
@@ -202,12 +202,12 @@ usuario_puntuacion_habilidades = np.matmul(usuario_habilidades, Table6_matrix)
 
 usuario_puntuacion_habilidades=usuario_puntuacion_habilidades[0]
 
-usuario_puntuacion_habilidades[0] = 4*np.exp(usuario_puntuacion_habilidades[0])/(np.exp(usuario_puntuacion_habilidades[0])+1)+1
-usuario_puntuacion_habilidades[1] = 4*np.exp(usuario_puntuacion_habilidades[1])/(np.exp(usuario_puntuacion_habilidades[1])+1)+1
-usuario_puntuacion_habilidades[2] = 4*np.exp(usuario_puntuacion_habilidades[2])/(np.exp(usuario_puntuacion_habilidades[2])+1)+1
-usuario_puntuacion_habilidades[3] = 4*np.exp(usuario_puntuacion_habilidades[3])/(np.exp(usuario_puntuacion_habilidades[3])+1)+1
-usuario_puntuacion_habilidades[4] = 4*np.exp(usuario_puntuacion_habilidades[4])/(np.exp(usuario_puntuacion_habilidades[4])+1)+1
-usuario_puntuacion_habilidades[5] = 4*np.exp(usuario_puntuacion_habilidades[5])/(np.exp(usuario_puntuacion_habilidades[5])+1)+1
+usuario_puntuacion_habilidades[0] = min(4*np.exp(usuario_puntuacion_habilidades[0])/(np.exp(usuario_puntuacion_habilidades[0])+1)+1,0.9*4.8)
+usuario_puntuacion_habilidades[1] = min(4*np.exp(usuario_puntuacion_habilidades[1])/(np.exp(usuario_puntuacion_habilidades[1])+1)+1,0.9*4.8)
+usuario_puntuacion_habilidades[2] = min(4*np.exp(usuario_puntuacion_habilidades[2])/(np.exp(usuario_puntuacion_habilidades[2])+1)+1,0.9*4.89)
+usuario_puntuacion_habilidades[3] = min(4*np.exp(usuario_puntuacion_habilidades[3])/(np.exp(usuario_puntuacion_habilidades[3])+1)+1,0.9*4.81)
+usuario_puntuacion_habilidades[4] = min(4*np.exp(usuario_puntuacion_habilidades[4])/(np.exp(usuario_puntuacion_habilidades[4])+1)+1,0.9*4.76)
+usuario_puntuacion_habilidades[5] = min(4*np.exp(usuario_puntuacion_habilidades[5])/(np.exp(usuario_puntuacion_habilidades[5])+1)+1,0.9*4.83)
 
 usuario_habilidades_scoring    = 2*usuario_puntuacion_habilidades.mean()
 
@@ -559,16 +559,16 @@ usuario_puntuacion_actitudes = np.matmul(usuario_actitudes, Table10_matrix)
     
 usuario_puntuacion_actitudes=usuario_puntuacion_actitudes[0]
 
-usuario_puntuacion_actitudes[0] = 4*np.exp(usuario_puntuacion_actitudes[0])/(np.exp(usuario_puntuacion_actitudes[0])+1)+1
-usuario_puntuacion_actitudes[1] = 4*np.exp(usuario_puntuacion_actitudes[1])/(np.exp(usuario_puntuacion_actitudes[1])+1)+1
-usuario_puntuacion_actitudes[2] = 4*np.exp(usuario_puntuacion_actitudes[2])/(np.exp(usuario_puntuacion_actitudes[2])+1)+1
-usuario_puntuacion_actitudes[3] = 4*np.exp(usuario_puntuacion_actitudes[3])/(np.exp(usuario_puntuacion_actitudes[3])+1)+1
-usuario_puntuacion_actitudes[4] = 4*np.exp(usuario_puntuacion_actitudes[4])/(np.exp(usuario_puntuacion_actitudes[4])+1)+1
-usuario_puntuacion_actitudes[5] = 4*np.exp(usuario_puntuacion_actitudes[5])/(np.exp(usuario_puntuacion_actitudes[5])+1)+1
-usuario_puntuacion_actitudes[6] = 4*np.exp(usuario_puntuacion_actitudes[6])/(np.exp(usuario_puntuacion_actitudes[6])+1)+1
-usuario_puntuacion_actitudes[7] = 4*np.exp(usuario_puntuacion_actitudes[7])/(np.exp(usuario_puntuacion_actitudes[7])+1)+1
-usuario_puntuacion_actitudes[8] = 4*np.exp(usuario_puntuacion_actitudes[8])/(np.exp(usuario_puntuacion_actitudes[8])+1)+1
-usuario_puntuacion_actitudes[9] = 4*np.exp(usuario_puntuacion_actitudes[9])/(np.exp(usuario_puntuacion_actitudes[9])+1)+1
+usuario_puntuacion_actitudes[0] = min(4*np.exp(usuario_puntuacion_actitudes[0])/(np.exp(usuario_puntuacion_actitudes[0])+1)+1,0.9*4.89)
+usuario_puntuacion_actitudes[1] = min(4*np.exp(usuario_puntuacion_actitudes[1])/(np.exp(usuario_puntuacion_actitudes[1])+1)+1,0.9*4.82)
+usuario_puntuacion_actitudes[2] = min(4*np.exp(usuario_puntuacion_actitudes[2])/(np.exp(usuario_puntuacion_actitudes[2])+1)+1,0.9*4.88)
+usuario_puntuacion_actitudes[3] = min(4*np.exp(usuario_puntuacion_actitudes[3])/(np.exp(usuario_puntuacion_actitudes[3])+1)+1,0.9*4.79)
+usuario_puntuacion_actitudes[4] = min(4*np.exp(usuario_puntuacion_actitudes[4])/(np.exp(usuario_puntuacion_actitudes[4])+1)+1,0.9*4.77)
+usuario_puntuacion_actitudes[5] = min(4*np.exp(usuario_puntuacion_actitudes[5])/(np.exp(usuario_puntuacion_actitudes[5])+1)+1,0.9*4.87)
+usuario_puntuacion_actitudes[6] = min(4*np.exp(usuario_puntuacion_actitudes[6])/(np.exp(usuario_puntuacion_actitudes[6])+1)+1,0.9*4.75)
+usuario_puntuacion_actitudes[7] = min(4*np.exp(usuario_puntuacion_actitudes[7])/(np.exp(usuario_puntuacion_actitudes[7])+1)+1,0.9*4.77)
+usuario_puntuacion_actitudes[8] = min(4*np.exp(usuario_puntuacion_actitudes[8])/(np.exp(usuario_puntuacion_actitudes[8])+1)+1,0.9*4.74)
+usuario_puntuacion_actitudes[9] = min(4*np.exp(usuario_puntuacion_actitudes[9])/(np.exp(usuario_puntuacion_actitudes[9])+1)+1,0.9*4.74)
 
 usuario_actitudes_scoring    = 2*usuario_puntuacion_actitudes.mean()
 
